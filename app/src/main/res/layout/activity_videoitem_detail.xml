@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoitem_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VideoDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailList"/>
+
+        <!-- DraggablePanel -->
+        <com.github.pedrovgs.DraggablePanel
+            android:id="@+id/draggable_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+            draggable_panel:y_scale_factor="@dimen/y_scale_factor"
+            draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+            draggable_panel:enable_horizontal_alpha_effect="true"
+            android:layout_gravity="left|center_vertical" />
+
+</FrameLayout>

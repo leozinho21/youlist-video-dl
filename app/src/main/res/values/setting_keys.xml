@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources translatable="false">
+    <!-- Categories -->
+    <string name="settings_category_video_audio">settings_category_video_audio</string>
+    <string name="settings_category_appearance">settings_category_appearance</string>
+    <string name="settings_content_options">settings_content_options</string>
+    <string name="settings_category_other">settings_category_other</string>
+    <!-- Key values -->
+    <string name="dl_path_video">download_path</string>
+    <string name="dl_path_audio">download_path_audio</string>
+    <string name="autoplay_through_intent_key">autoplay_through_intent</string>
+
+    <string name="def_res">default_resolution_preference</string>
+    <string name="def_res_value"></string>
+    <string-array name="resolution_list">
+        <item>720p</item>
+        <item>360p</item>
+        <item>240p</item>
+        <item>144p</item>
+    </string-array>
+
+    <string name="theme_key">theme</string>
+    <string name="default_theme_value">0</string>
+    <string-array name="theme_description_list">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="default_audio_format_key">default_audio_format</string>
+    <string name="default_audio_format_value">m4a</string>
+    <string-array name="audio_format_description_list">
+        <item>WebM — free format</item>
+        <item>m4a — better quality</item>
+    </string-array>
+    <string-array name="audio_format_list">
+        <item>webm</item>
+        <item>m4a</item>
+    </string-array>
+
+    <string name="show_next_video_key">show_next_video</string>
+    <string name="default_language_value">en</string>
+    <string name="language_key">language</string>
+
+    <string-array name="language_codes">
+        <item>en</item>
+    </string-array>
+    <string-array name="language_names">
+        <item>English (UK)</item>
+    </string-array>
+    <string name="show_age_restricted_content">show_age_restricted_content</string>
+</resources>

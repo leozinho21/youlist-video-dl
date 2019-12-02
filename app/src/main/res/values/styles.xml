@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/ActionbarTheme</item>
+        <item name="actionBarStyle">@style/ActionbarTheme</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/light_background_color</item>
+        <item name="android:windowBackground">@color/light_background_color</item>
+
+
+    </style>
+
+    <style name="ActionbarTheme" parent="Widget.AppCompat.Light.ActionBar.Solid" >
+        <item name="android:displayOptions">showHome</item>
+        <item name="displayOptions">showHome</item>
+        <item name="colorAccent">@color/light_background_color</item>
+        <item name="background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/light_background_color</item>
+    </style>
+
+    <style name="RootTheme" parent="android:Theme.Holo">
+    </style>
+
+    <style name="VideoPlayerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/VideoPlayerActionBarTheme</item>
+        <item name="actionBarStyle">@style/VideoPlayerActionBarTheme</item>
+        <item name="colorAccent">@color/light_background_color</item>
+        <item name="android:windowBackground">@color/light_background_color</item>
+    </style>
+    <style name="VideoPlayerActionBarTheme" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse" >
+        <item name="android:displayOptions">showHome</item>
+        <item name="displayOptions">showHome</item>
+        <item name="colorAccent">@color/light_background_color</item>
+        <item name="android:windowBackground">@color/light_background_color</item>
+        <item name="android:background">@color/light_background_color</item>
+        <item name="background">@color/light_background_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <!--<item name="colorButtonNormal">@color/common_plus_signin_btn_text_light_default</item>-->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

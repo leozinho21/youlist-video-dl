@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/detailVideoThumbnailWindowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        >
+
+        <ImageView android:id="@+id/detailThumbnailView"
+                android:contentDescription="@string/detail_thumbnail_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/black"
+                android:src="@drawable/dummy_thumbnail"/>
+        <ProgressBar android:id="@+id/detailProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+        <ImageView android:id="@+id/playArrowView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_circle_filled_white"
+            android:contentDescription="@string/play" />
+        <Button
+            android:id="@+id/detailVideoThumbnailWindowBackgroundButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textview">
+
+        <com.github.rtoshiro.view.video.FullscreenVideoLayout
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+    </FrameLayout>
+
+    <Button android:id="@+id/content_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:focusable="false"/>
+</LinearLayout>

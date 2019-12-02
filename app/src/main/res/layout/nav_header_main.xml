@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/accent_material_light"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/nav_header_vertical_spacing"
+    android:paddingRight="@dimen/nav_header_vertical_spacing"
+    android:paddingTop="@dimen/nav_header_vertical_spacing"
+    android:weightSum="1">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgProfilePic"
+        android:contentDescription="@string/detail_uploader_thumbnail_view_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_group_128"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_name"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/accent_material_light"
+        >
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            tools:visibility="gone"
+            android:background="@color/accent_material_light"
+            android:foregroundGravity="center_vertical" />
+
+        <LinearLayout
+            android:id="@+id/sign_out_and_disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@drawable/abc_cab_background_top_material"
+            style="@style/Base.TextAppearance.AppCompat.Menu"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="signOut"
+                android:textSize="13dp"
+                android:text="@string/sign_out"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:background="@drawable/common_google_signin_btn_text_light_disabled"
+                style="@android:style/Widget.DeviceDefault.Light.ActionButton"
+                android:textColor="@color/abc_primary_text_material_light"
+                android:backgroundTintMode="src_in"
+                android:contextClickable="true"
+                android:paddingStart="25dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

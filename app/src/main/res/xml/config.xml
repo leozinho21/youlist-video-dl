@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings"
+    android:key="general_preferences">
+
+        <ListPreference
+            android:key="@string/def_res"
+            android:title="Default resolution"
+            android:entries="@array/resolution_list"
+            android:entryValues="@array/resolution_list"
+            android:defaultValue="360p"/>
+
+        <ListPreference
+            android:key="default_audio_format"
+            android:title="Audio format"
+            android:summary="%s"
+            android:entries="@array/audio_format_description_list"
+            android:entryValues="@array/audio_format_list"
+            android:defaultValue="@string/default_audio_format_value"/>
+
+        <CheckBoxPreference
+            android:key="show_next_video"
+            android:title="Show next video"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="@string/language_key"
+            android:title="Language"
+            android:summary="%s"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_codes"
+            android:defaultValue="@string/default_language_value" />
+
+
+    <PreferenceCategory
+        android:key="@string/settings_category_other"
+        android:title="Other"
+        android:textAllCaps="true">
+
+        <EditTextPreference
+            android:key="@string/dl_path_video"
+            android:title="@string/dl_path_title"
+            android:summary="@string/dl_path_summary"
+            android:dialogTitle="@string/dl_path_dialog_title" />
+
+        <EditTextPreference
+            android:key="download_path_audio"
+            android:title="Audio download path"
+            android:summary="Path to store downloaded audio in"
+            android:dialogTitle="Download path for audio files" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
